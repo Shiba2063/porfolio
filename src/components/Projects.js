@@ -18,8 +18,10 @@ export default function Projects() {
               <div className="project-desc">{p.desc}</div>
               <div className="project-tags">{p.tags.map(t => <span key={t} className="tag">{t}</span>)}</div>
               <div className="project-links">
-                <a href="#" className="proj-btn proj-btn-solid" onClick={e => e.preventDefault()}>Live Demo</a>
-                <a href="#" className="proj-btn proj-btn-ghost" onClick={e => e.preventDefault()}>GitHub</a>
+                {/* <a href="#" className="proj-btn proj-btn-solid" onClick={e => e.preventDefault()}>Live Demo</a> */}
+                {/* <a href="#" className="proj-btn proj-btn-ghost" onClick={e => e.preventDefault()}>GitHub</a> */}
+                 <button className="proj-btn proj-btn-solid" onClick={e => e.preventDefault()}>Live Demo</button>
+                 <button className="proj-btn proj-btn-ghost" onClick={e => e.preventDefault()}>GitHub</button>
               </div>
             </div>
           </div>

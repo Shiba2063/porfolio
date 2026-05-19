@@ -21,7 +21,8 @@ export default function Hero() {
           <div className="hero-btns">
             <a href="#projects" className="btn-primary">🚀 View Projects</a>
             <a href="#contact" className="btn-outline">📬 Get in Touch</a>
-            <a href="#" className="btn-outline" onClick={e => { e.preventDefault(); alert("CV download coming soon!"); }}>⬇ Download CV</a>
+            {/* <a href="#" className="btn-outline" onClick={e => { e.preventDefault(); alert("CV download coming soon!"); }}>⬇ Download CV</a> */}
+            <button className="btn-outline" onClick={() => alert("CV download coming soon!")}>⬇ Download CV</button>
           </div>
           <div className="hero-stats">
             <div className="hero-stat"><div className="hero-stat-num">5+</div><div className="hero-stat-label">Projects</div></div>
