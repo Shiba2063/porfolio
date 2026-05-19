@@ -25,7 +25,7 @@ export default function Academics() {
         </div>
         <div>
           <div style={{ fontSize: "0.72rem", color: "var(--teal)", fontFamily: "var(--font-mono)", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            // Certifications & Training
+             Certifications & Training
           </div>
           <ul className="cert-list">
             {CERTS.map((c, i) => (

@@ -149,8 +149,22 @@ section { padding: 7rem clamp(1.5rem,6vw,6rem); }
   margin-bottom: 0.6rem;
   display: flex; align-items: center; gap: 0.6rem;
 }
+
+body {
+  counter-reset: section-counter -1;
+}
+
+/* Increment counter on each section that contains .section-tag */
+section {
+  counter-increment: section-counter;
+}
+
+/* Display number with dot and space before the section tag text */
 .section-tag::before {
-  content: '//'; color: var(--amber); font-weight: 600;
+  content: counter(section-counter, decimal-leading-zero) ". ";
+  color: var(--amber);
+  font-weight: 600;
+  margin-right: 0.5rem;
 }
 .section-title {
   font-size: clamp(2rem,4vw,3rem);
