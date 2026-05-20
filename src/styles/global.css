@@ -321,9 +321,16 @@ section {
 
 #hero {
   min-height: 100vh;
-  display: flex; align-items: center;
-  padding-top: 64px;
-  position: relative; overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 110px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 120px;
+  }
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
