@@ -25,18 +25,25 @@ export const SKILLS_SOFT = [
 ];
 
 export const PROJECTS = [
-  {
-    emoji: "🌐", title: "Personal Portfolio",
+   {
+    emoji: "🌐",
+    title: "Personal Portfolio",
     desc: "A modern, responsive portfolio website built with React.js featuring dark/light mode, animations, and an AI chatbot.",
     tags: ["React.js", "CSS", "Framer Motion"],
     color: "linear-gradient(135deg,#0d1520,#162035)",
+    live: "https://shibaportfolio.vercel.app/",
+    github: "https://github.com/Shiba2063/text-analyzer-app-byshiba.git"
+
   },
-  {
-    emoji: "🎓", title: "Student Management System",
-    desc: "Full-featured SMS with CRUD operations for managing students, courses, grades, and attendance records.",
-    tags: ["Python", "MySQL", "Tkinter"],
-    color: "linear-gradient(135deg,#0c1a1a,#0d2a20)",
-  },
+ {
+  emoji: "📝",
+  title: "Text Analyzer App",
+  desc: "A powerful text analysis web application that provides word count, character count, text formatting, preview, and reading time estimation with a clean responsive UI.",
+  tags: ["React.js", "Bootstrap", "JavaScript"],
+  color: "linear-gradient(135deg,#0d1520,#1a2238)",
+  live: "https://text-analyzer-app-byshiba.vercel.app/",
+  github: "https://github.com/Shiba2063/text-analyzer-app-byshiba.git"
+},
   {
     emoji: "⛅", title: "Weather App",
     desc: "Real-time weather forecast app with location detection, 7-day forecasts, and beautiful animated UI.",
