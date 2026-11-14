@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { CONTACT_INFO } from "../data/portfolioData";
@@ -33,16 +32,10 @@ export default function Contact() {
 
     setStatus({ type: "", message: "" });
 
-    const {
-      name,
-      email,
-      subject,
-      message,
-    } = formData;
+    const { name, email, subject, message } = formData;
 
     // Basic validation
-    if (!name.trim() || !email.trim() ||
-        !subject.trim() || !message.trim()) {
+    if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
       setStatus({
         type: "error",
         message: "Please fill in all fields.",
@@ -50,17 +43,14 @@ export default function Contact() {
       return;
     }
 
-    const serviceID =
-      process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
-    const notificationTemplateID =
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const notificationTemplateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
     const autoReplyTemplateID =
       process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE_ID;
 
-    const publicKey =
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
     if (
       !serviceID ||
@@ -91,7 +81,7 @@ export default function Contact() {
         serviceID,
         notificationTemplateID,
         templateParams,
-        publicKey
+        publicKey,
       );
 
       // 2. Send automatic reply to the visitor
@@ -102,7 +92,7 @@ export default function Contact() {
           serviceID,
           autoReplyTemplateID,
           templateParams,
-          publicKey
+          publicKey,
         );
       } catch (replyError) {
         console.error("Auto-reply error:", replyError);
@@ -113,12 +103,14 @@ export default function Contact() {
       if (autoReplySent) {
         setStatus({
           type: "success",
-          message: "Message sent successfully! A confirmation email has been sent to you.",
+          message:
+            "Message sent successfully! A confirmation email has been sent to you.",
         });
       } else {
         setStatus({
           type: "success",
-          message: "Your message was received, but the confirmation email could not be sent.",
+          message:
+            "Your message was received, but the confirmation email could not be sent.",
         });
       }
 
@@ -129,7 +121,6 @@ export default function Contact() {
         subject: "",
         message: "",
       });
-
     } catch (error) {
       console.error("Email sending error:", error);
 
@@ -148,82 +139,76 @@ export default function Contact() {
         <div className="section-tag">Let's Connect</div>
 
         <h2 className="section-title">
-          Get in<br />Touch
+          Get in
+          <br />
+          Touch
         </h2>
 
         <p className="section-subtitle">
-          Have an idea, opportunity, or just want to say hi?
-          My inbox is always open.
+          Have an idea, opportunity, or just want to say hi? My inbox is always
+          open.
         </p>
       </div>
 
       <div className="contact-grid fade-in">
-
         {/* Contact Information */}
-      
 
-{/* Clickable Contact Information */}
-<div className="contact-info">
-  {CONTACT_INFO.map((c, i) => {
-    const type = c.label.trim().toUpperCase();
+        {/* Clickable Contact Information */}
+        <div className="contact-info">
+          {CONTACT_INFO.map((c, i) => {
+            const type = c.label.trim().toUpperCase();
 
-    const contactLinks = {
-      EMAIL: `mailto:${c.val}`,
-      PHONE: `tel:${c.val.replace(/[^\d+]/g, "")}`,
-      LOCATION:
-        "https://www.google.com/maps/search/?api=1&query=Kathmandu%2CNepal",
-      LINKEDIN: c.val,
-      GITHUB: c.val,
-      FACEBOOK: c.val,
-    };
+            const contactLinks = {
+              EMAIL: `mailto:${c.val}`,
+              PHONE: `tel:${c.val.replace(/[^\d+]/g, "")}`,
+              LOCATION:
+                "https://www.google.com/maps/search/?api=1&query=Kathmandu%2CNepal",
+              LINKEDIN: c.val,
+              GITHUB: c.val,
+              FACEBOOK: c.val,
+            };
 
-    const displayNames = {
-      LINKEDIN: "Visit LinkedIn Profile",
-      GITHUB: "Explore GitHub Projects",
-      FACEBOOK: "Connect on Facebook",
-    };
+            const displayNames = {
+              LINKEDIN: "Visit LinkedIn Profile",
+              GITHUB: "Explore GitHub Projects",
+              FACEBOOK: "Connect on Facebook",
+            };
 
-    const url = contactLinks[type] || "#";
+            const url = contactLinks[type] || "#";
 
-    const external = [
-      "LOCATION",
-      "LINKEDIN",
-      "GITHUB",
-      "FACEBOOK",
-    ].includes(type);
+            const external = [
+              "LOCATION",
+              "LINKEDIN",
+              "GITHUB",
+              "FACEBOOK",
+            ].includes(type);
 
-    return (
-      <a
-        className="contact-item"
-        key={i}
-        href={url}
-        target={external ? "_blank" : undefined}
-        rel={external ? "noopener noreferrer" : undefined}
-      >
-        <span className="contact-icon">{c.icon}</span>
+            return (
+              <a
+                className="contact-item"
+                key={i}
+                href={url}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+              >
+                <span className="contact-icon">{c.icon}</span>
 
-        <div className="contact-details">
-          <div className="contact-label">{c.label}</div>
+                <div className="contact-details">
+                  <div className="contact-label">{c.label}</div>
 
-          <div className="contact-val">
-            {displayNames[type] || c.val}
-          </div>http://localhost:3000
+                  <div className="contact-val">
+                    {displayNames[type] || c.val}
+                  </div>
+                </div>
+
+                <span className="contact-arrow">↗</span>
+              </a>
+            );
+          })}
         </div>
 
-        <span className="contact-arrow">↗</span>
-      </a>
-    );
-  })}
-</div>
-
-
-
         {/* Contact Form */}
-        <form
-          className="contact-form"
-          onSubmit={handleSubmit}
-        >
-
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label className="form-label" htmlFor="name">
               Your Name
@@ -306,13 +291,8 @@ export default function Contact() {
                 marginBottom: "15px",
                 borderRadius: "6px",
                 backgroundColor:
-                  status.type === "success"
-                    ? "#e8f8ee"
-                    : "#fdecec",
-                color:
-                  status.type === "success"
-                    ? "#166534"
-                    : "#b91c1c",
+                  status.type === "success" ? "#e8f8ee" : "#fdecec",
+                color: status.type === "success" ? "#166534" : "#b91c1c",
               }}
             >
               {status.message}
@@ -337,7 +317,6 @@ export default function Contact() {
           <div className="form-note">
             ⚡ Your message will be sent directly to my inbox.
           </div>
-
         </form>
       </div>
     </section>
