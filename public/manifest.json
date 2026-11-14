@@ -23,3 +23,32 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
+
+
+{
+  "name": "Shiba Bhatta",
+  "short_name": "Shiba",
+  "description": "Personal Portfolio of Shiba Bhatta",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11141b",
+  "theme_color": "#11141b",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

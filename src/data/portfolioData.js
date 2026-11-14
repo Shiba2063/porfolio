@@ -10,7 +10,7 @@ export const SKILLS_TECH = [
   { name: "React.js", pct: 75 },
   { name: "JavaScript", pct: 80 },
   { name: "HTML & CSS", pct: 88 },
-  { name: "Python", pct: 65 },
+  { name: "Python", pct: 90 },
   { name: "MySQL / Databases", pct: 60 },
   { name: "Git & Version Control", pct: 70 },
 ];

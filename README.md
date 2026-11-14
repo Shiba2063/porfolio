@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Shiba Bhatta | Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the personal portfolio of **Shiba Bhatta**, a BEIT (Bachelor of Engineering in Information Technology) student at Nepal College of Information Technology (NCIT), Kathmandu. Shiba is an aspiring full-stack developer who enjoys building useful, responsive web applications and exploring how technology can solve real-world problems.
 
-## Available Scripts
+**Visit the portfolio:** [shibaportfolio.vercel.app](https://shibaportfolio.vercel.app/)
 
-In the project directory, you can run:
+## About Shiba
 
-### `npm start`
+Shiba is pursuing his engineering degree at NCIT, where he studies software engineering, information systems, databases, networking, and web development. Alongside his coursework, he develops his skills through independent learning and hands-on projects. He is interested in creating technology that can make everyday life better, in Nepal and beyond.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+He also enjoys working with teams, taking leadership roles, coordinating events, and presenting technical topics. He is currently open to internship opportunities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Education
 
-### `npm test`
+- **BEIT**, Nepal College of Information Technology (NCIT), 2024–present
+- **+2 Science, Computer Science**, National Examination Board (NEB), 2022–2024
+- **SEE**, National Examination Board (NEB), completed in 2021
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Skills
 
-### `npm run build`
+**Technical:** React.js, JavaScript, HTML, CSS, Python, MySQL and databases, Git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Professional:** Communication, leadership, teamwork, problem solving, public speaking, creativity
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Featured Projects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Personal Portfolio** — A responsive React portfolio featuring project highlights, animations, theme options, and an AI chatbot.
+- **Text Analyzer App** — A web app for word and character counts, text formatting, preview, and reading-time estimates. [Live demo](https://text-analyzer-app-byshiba.vercel.app/)
+- **Weather App** — A weather application concept featuring location detection and forecast information.
+- **AI Chatbot** — A conversational interface project exploring natural language processing.
+- **Sports Management App** — A platform concept for match schedules, scores, and team rosters.
 
-### `npm run eject`
+## Interests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Outside of development, Shiba enjoys cricket, football, volleyball, basketball, reading, and learning about new technologies. He values collaborative projects and opportunities to support and lead a team.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Get in Touch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Email:** [shiba.241520@ncit.edu.np](mailto:shiba.241520@ncit.edu.np)
+- **Location:** Kathmandu, Nepal
+- [LinkedIn](https://www.linkedin.com/in/shiba-bhatta-43823b38b)
+- [GitHub](https://github.com/Shiba2063)
+- [Facebook](https://facebook.com/shiba.bhatta.2025)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## About This Website
 
-## Learn More
+This portfolio is built with **React** and CSS. It brings together Shiba's profile, education, skills, projects, interests, and contact information in a responsive single-page website.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run it locally, install the dependencies and start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+npm start
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The site will be available at [http://localhost:3000](http://localhost:3000). Create a production build with `npm run build`.
