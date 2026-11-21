@@ -13,6 +13,8 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
+import TrainingCertificates from "./components/TrainingCertificates";
+
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -36,7 +38,7 @@ export default function App() {
 
   const nav = [
     ["About", "#about"], ["Skills", "#skills"], ["Projects", "#projects"],
-    ["Academic", "#academic"], ["Experience", "#experience"], ["Contact", "#contact"],
+    ["Academic", "#academic"], ["Experience", "#experience"],["TRAINING", "#training-certificates"], ["Contact", "#contact"],
   ];
 
   return (
@@ -49,6 +51,7 @@ export default function App() {
       <Projects />
       <Academics />
       <Experience />
+      <TrainingCertificates />
       <Sports />
       <Testimonials />
       <Contact />

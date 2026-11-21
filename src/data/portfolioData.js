@@ -129,3 +129,31 @@ export const CONTACT_INFO = [
   { icon: <FaGithub />, label: "GitHub", val: "https://github.com/Shiba2063" },
   { icon: <FaFacebook />, label: "Facebook", val: "https://facebook.com/shiba.bhatta.2025" },
 ];
+
+
+
+
+
+export const trainingCertificates = [
+    {
+    icon: "🏛️",
+    title: "Government AI Training",
+    organization:
+      "National Academy of Vocational Training (NAVT)",
+    year: "2026",
+    description:
+      "Completed AI training organized by NAVT under the ministry overseeing labour, employment, and youth in Nepal.",
+    certificateLink: "/certificates/navt.pdf"
+  },
+
+  {
+    icon: "🤖",
+    title: "Artificial Intelligence Training",
+    organization: "Danson Solutions ",
+    year: "2026",
+    description:
+      "Completed Artificial Intelligence training covering AI concepts, applications, and practical knowledge.",
+    certificateLink: "/certificates/danson.pdf"
+  }
+
+];
